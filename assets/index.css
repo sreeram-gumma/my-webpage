@@ -1,0 +1,38 @@
+#about{
+
+    width: 6rem;
+    height: 2rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#resume{
+    width: 6rem;
+    height: 2rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+#summary{
+    color:#DE3163;
+        font-family: "Marcellus", serif;
+        font-size: large;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+.header{
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: x-large;
+}
+#header{
+    margin-bottom: 0%
+}
+#Centerfont{
+    margin-top: 0%;
+}
