@@ -3,12 +3,15 @@
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
+    display: inline;
 }
 #resume{
     text-align: center;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
+    margin-top: 0%;
+    display: inline;
 }
 
 #summary{
@@ -24,22 +27,27 @@
     font-weight: 900;
     font-style: normal;
     font-size: x-large;
+    
 }
 #header{
     margin-top: 0;
+    display: block;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: x-large;
 }
 #Centerfont{
     margin-top: 0%;
+
 }
 .heading{
     background-color: #BDDDE4;
-    
+    display: block;
+
 }
 
-img{
-    height: 250;
-    width: 250;
-    margin:0%;
-    padding: 0%;
-    border: 0%;
+img{ 
+    height: 150;
+    width: 150;
 }
