@@ -1,35 +1,48 @@
-#about{
-    text-align: center;
+.tab {
+    display: flex; /* Change from inline to flex */
+    justify-content: center; /* Center the tabs */
+    align-items: center;
+    gap: 30px; /* Spacing between the buttons */
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
     font-style: normal;
-    display: inline;
-}
-#resume{
-    text-align: center;
-    font-family: "Libre Baskerville", serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-top: 0%;
-    display: inline;
+    margin-top: 20px; /* Add spacing from top */
+    height: 100px;
+    width: 100%; /* Make it responsive */
 }
 
-#summary{
-    color:#DE3163;
-        font-family: "Marcellus", serif;
-        font-size: large;
-        font-weight: 400;
-        font-style: normal;    
+.tab a h4 {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    transition: background-color 0.3s ease;
 }
-.title{
+
+.tab a h4:hover {
+    background-color: #ccc;
+}
+
+#summary {
+    color: #DE3163;
+    font-family: "Marcellus", serif;
+    font-size: large;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
     color: black;
     font-family: "Libre Baskerville", serif;
     font-weight: 900;
     font-style: normal;
     font-size: x-large;
-    
 }
-#header{
+
+#header {
     margin-top: 0;
     display: block;
     font-family: "Libre Baskerville", serif;
@@ -37,17 +50,20 @@
     font-style: normal;
     font-size: x-large;
 }
-#Centerfont{
+
+#Centerfont {
     margin-top: 0%;
-
 }
-.heading{
+
+.heading {
     background-color: #BDDDE4;
-    display: block;
-
+    display: inline-flex;
+    position: static;
 }
 
-img{ 
-    height: 150;
-    width: 150;
+img {
+    height: 150px;
+    width: 150px;
+    position: static;
+    border-radius: 10px;
 }
