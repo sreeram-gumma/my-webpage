@@ -1,0 +1,80 @@
+body {
+    font-family: "Libre Baskerville", serif;
+    background-color: #F4F8FB;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .projects-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #EAF4FB;
+    border-bottom: 1px solid #D0E2EF;
+  }
+  
+  .projects-header h1 {
+    color: #2F80ED;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .projects-header p {
+    color: #4F4F4F;
+    margin: 0 auto 15px;
+    max-width: 600px;
+    font-size: 16px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2F80ED;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  .projects-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .project-card {
+    background-color: #ffffff;
+    border-left: 6px solid #2F80ED;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+    color: #1A1A1A;
+  }
+  
+  .project-card p {
+    color: #4F4F4F;
+    line-height: 1.6;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
