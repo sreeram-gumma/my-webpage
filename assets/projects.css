@@ -1,3 +1,4 @@
+/* === Base Styles === */
 body {
     font-family: "Libre Baskerville", serif;
     background-color: #F4F8FB;
@@ -77,4 +78,43 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  
+  /* === Responsive Design === */
+  @media (max-width: 768px) {
+    .projects-header {
+      padding: 30px 15px 15px;
+    }
+  
+    .projects-header h1 {
+      font-size: 26px;
+    }
+  
+    .projects-header p {
+      font-size: 15px;
+      padding: 0 10px;
+    }
+  
+    .back-link {
+      font-size: 13px;
+    }
+  
+    .projects-section {
+      padding: 0 15px;
+      margin: 30px auto;
+    }
+  
+    .project-card {
+      padding: 16px;
+    }
+  
+    .project-card h3 {
+      font-size: 18px;
+    }
+  
+    .project-card p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+  
   
