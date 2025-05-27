@@ -97,9 +97,11 @@ body {
     font-size: 18px;
     line-height: 1.75;
     color: #E5E7EB;
-    text-align: justify;
+    text-align: left; /* or center if preferred */
     margin-bottom: 20px;
+    word-break: break-word;
   }
+  
   
   .title {
     color: #2F80ED;
