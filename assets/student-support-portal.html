@@ -4,13 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Student Portal Support</title>
+
+  <!-- Load tsparticles -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
   <style>
-    /* Reset + Dark Theme */
+    /* Background canvas */
+    #tsparticles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    /* Base Styles */
     body {
       margin: 0;
       padding: 2rem;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0f172a;
+      background-color: transparent;
       color: #f1f5f9;
       line-height: 1.6;
     }
@@ -26,9 +40,10 @@
       max-width: 880px;
       margin: auto;
       padding: 2rem;
-      background: #1e293b;
+      background: rgba(30, 41, 59, 0.9);
       border-radius: 16px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(4px);
     }
 
     h1 {
@@ -93,47 +108,100 @@
   </style>
 </head>
 <body>
+  <!-- Background Animation -->
+  <div id="tsparticles"></div>
+
+  <!-- Main Content -->
   <div class="container">
     <a href="./Projects.html">← Back to Projects</a>
 
     <h1>🎓 Student Portal Support</h1>
-    <p class="subtitle">University Technical Support Experience | SIS & LMS Systems</p>
+    <p class="subtitle">University Technical Support Experience | SIS & LMS Systems with DevOps Practices</p>
 
     <section>
       <h2>📌 Overview</h2>
       <p>
-        As part of the university’s SIS & LMS transition support team, I provided L1 technical assistance to over 100+ students during the migration to MyPath and Brightspace systems. My focus was ensuring smooth navigation, quick resolution of issues, and collaboration with internal departments to improve student experience.
+        As part of the university’s SIS & LMS transition team, I supported over 100+ students during the migration to MyPath and Brightspace. I focused on seamless navigation, fast issue resolution, and collaboration with IT departments to enhance reliability.  
+        <br><br>
+        Although I didn’t use formal DevOps tools, I adopted a DevOps mindset automating repetitive tasks, improving workflows, and implementing feedback loops to scale support effectively.
       </p>
     </section>
 
     <section>
       <h2>🛠️ Tools & Platforms Used</h2>
       <ul>
-        <li>MyPath (Student Information System)</li>
-        <li>Brightspace (D2L LMS)</li>
-        <li>Freshservice (ticketing tool)</li>
-        <li>Microsoft Teams, SharePoint, Outlook</li>
+        <li><strong>Freshchat:</strong> Real-time student support through chat</li>
+        <li><strong>Freshservice:</strong> Ticket tracking, escalation, and resolution</li>
+        <li><strong>Microsoft Excel:</strong> Automated log sheet tracking and updates</li>
+        <li><strong>Microsoft Teams & Outlook:</strong> Team collaboration, meetings, and support communication</li>
+        <li><strong>MyPath:</strong> Student Information System (SIS)</li>
+        <li><strong>Brightspace (D2L):</strong> Learning Management System (LMS)</li>
       </ul>
     </section>
 
     <section>
       <h2>👤 My Role & Key Responsibilities</h2>
       <ul>
-        <li>Resolved 100+ technical support cases including login, registration, and payment issues.</li>
-        <li>Created and tracked helpdesk tickets; escalated complex issues to backend teams.</li>
-        <li>Guided students with portal walkthroughs and live troubleshooting sessions.</li>
-        <li>Provided detailed feedback on recurring issues to inform system improvement.</li>
+        <li>Resolved 100+ student issues involving login, registration, and payment access.</li>
+        <li>Automated common troubleshooting steps to reduce ticket resolution time.</li>
+        <li>Created and tracked tickets; escalated technical cases to backend teams.</li>
+        <li>Delivered portal walkthroughs and live issue-solving via Teams and email.</li>
+        <li>Shared insights on recurring issues to support documentation and updates.</li>
       </ul>
     </section>
 
     <section>
       <h2>🚀 Achievements & Impact</h2>
       <ul>
-        <li>Improved helpdesk efficiency by 30% through faster triage and support workflows.</li>
-        <li>Helped reduce repeat support cases by contributing to self-service FAQ improvements.</li>
-        <li>Contributed to a smooth academic transition during a critical semester shift.</li>
+        <li>Boosted helpdesk efficiency by 30% through optimized ticket handling.</li>
+        <li>Contributed to self-service FAQ updates, reducing repeat queries.</li>
+        <li>Ensured smooth platform adoption during a semester-wide system change.</li>
+        <li>Demonstrated DevOps principles through process automation, collaboration, and continuous improvement without relying on external DevOps tools.</li>
       </ul>
     </section>
   </div>
+
+  <!-- Particle Config -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      background: {
+        color: {
+          value: "#0f172a"
+        }
+      },
+      particles: {
+        number: {
+          value: 40,
+          density: { enable: true, area: 800 }
+        },
+        color: {
+          value: "#38bdf8"
+        },
+        shape: {
+          type: "circle"
+        },
+        opacity: {
+          value: 0.5
+        },
+        size: {
+          value: { min: 1, max: 3 }
+        },
+        links: {
+          enable: true,
+          distance: 120,
+          color: "#38bdf8",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1
+        }
+      },
+      detectRetina: true
+    });
+  </script>
 </body>
 </html>
+
